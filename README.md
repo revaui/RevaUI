@@ -4,7 +4,7 @@ A modern, native-web UI framework. HTML and CSS first. No JavaScript required by
 
 ## Status
 
-Reva UI 0.33 — Navigation completion: responsive navbar, mega-menu/hover-card compositions, and optional glide navigation enhancement.
+Reva UI 0.36 — Accessibility acceptance hardening. Core is feature-frozen; the static WCAG-oriented gate passes 51/51 checks while browser/manual acceptance remains explicitly pending.
 
 ## Principles
 
@@ -105,3 +105,14 @@ Adds safe-area-aware toast regions, semantic success/info/warning/error toast pr
 
 ### 0.33 — Navigation Completion
 Adds native-details responsive navbar composition, mega-menu and hover/focus-card patterns, plus `glide` navigation. Glide has a CSS-only fallback; the optional `@reva/js` `GlideNavigation` enhancement moves one indicator between hovered/focused items and restores it to the active item. Reduced motion removes travel animation.
+
+
+### 0.34 — Forms Completeness Audit & Completion
+Closes the bounded Forms Core gap: textarea sizing now follows the shared five-size control scale; choice groups, responsive horizontal fields and form grids are formalized; loading/busy presentation is control-relative and reduced-motion safe; forced-colors checked states are hardened; and `.select.customizable` adds a progressive native customizable-select path with a normal native fallback. See `docs/forms-audit-0.34.md` and `docs/forms-complete.html`.
+
+### 0.35 — Content States Completion & Core Feature Freeze
+Completes the reusable content-state family with explicit empty/default, no-results, error, success, offline, permission-required and maintenance presentations plus compact composition and public component tokens. Accessibility semantics remain application-controlled so live-region urgency matches the actual event. This closes the bounded feature gaps from the 0.30 Core scope audit; Core now enters feature freeze and moves to hardening/testing/documentation rather than new feature families.
+
+
+### 0.36 — Accessibility Acceptance Audit
+Hardens the feature-frozen Core against the WCAG 2.2 AA acceptance contract. Adds explicit increased-contrast behavior and a 24px target token, corrects official semantic/gradient contrast relationships, tightens compact action targets, improves reduced-motion and ARIA-disabled behavior, and audits accessible names across the demos. The automated/static gate passes 51/51 checks. This is not yet a claim of full WCAG conformance; browser, keyboard, screen-reader, zoom/reflow, touch and visual acceptance remain pending. See `docs/accessibility-acceptance-0.36.md`.
